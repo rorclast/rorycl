@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Rory C. Laster's Site</title>
+        <title>Rory C. Laster</title>
 
         <link href="/css/welcome.css" rel="stylesheet" type="text/css">
     </head>
