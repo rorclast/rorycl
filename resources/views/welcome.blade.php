@@ -9,31 +9,15 @@
         <link href="/css/welcome.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        
+        <div id="rorycl"></div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    rory.cl
-                </div>
-
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/rory-laster-857374a7">LinkedIn</a>
-                    <a href="https://github.com/rorclast">GitHub</a>
-                </div>
-            </div>
-        </div>
     </body>
+
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    
+    <!-- Load React Component. -->
+    <script src="/js/rorycl.js"></script>
 </html>

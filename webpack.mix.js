@@ -11,4 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/sass/welcome.scss', 'public/css');
+mix.sass('resources/sass/welcome.scss', 'public/css')
+   .js('resources/js/welcome.js', 'public/js')
+   .react('resources/js/rorycl.js', 'public/js');
